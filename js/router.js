@@ -26,4 +26,7 @@ var Pokedex = Panels.App.extend({
 		}
 	}
 });
-var pokedex = new Pokedex();
+var pokedex;
+Dex.loadTextData('en').then(function () {
+	pokedex = new Pokedex();
+});
